@@ -1,0 +1,101 @@
+.header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative; /* Add position relative to handle the absolute positioning of the menu */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 15rem;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it appears above the menu */
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header-link:hover {
+  /* text-decoration: underline; */
+  color: #e0f7fa;
+}
+
+.header-content {
+  padding-top: 3rem;
+}
+
+.header-greeting {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.header-title {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header-nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #1e3a8a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 1000; /* Ensure it appears above the main content */
+  }
+
+  .header-link {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
