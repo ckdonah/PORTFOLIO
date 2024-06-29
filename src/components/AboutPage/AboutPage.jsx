@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
+import SkillsContainer from '../Skill/SkillsContainer';
 
 function AboutPage() {
   return (
@@ -20,6 +21,7 @@ function AboutPage() {
           </div>
         </div>
       </section>
+      <SkillsContainer />
     </div>
   );
 }

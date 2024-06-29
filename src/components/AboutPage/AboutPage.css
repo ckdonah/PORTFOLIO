@@ -1,75 +1,76 @@
+/* AboutPage.css */
 .about-page {
-    background-color: #1e3a8a;
-    color: white;
-    min-height: 100vh;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about {
-    max-width: 1200px;
-    width: 100%;
-  }
-  
-  .about-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  .about-content {
-    flex: 1;
-  }
-  
-  .about-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .about-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-description {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .about-image-container {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .about-image {
-    max-width: 100%;
-    border-radius: 0.5rem;
-  }
-  
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-content {
-      margin-bottom: 2rem;
-    }
-  
-    .about-title {
-      font-size: 1.25rem;
-    }
-  
-    .about-subtitle {
-      font-size: 1rem;
-    }
-  
-    .about-description {
-      font-size: 0.875rem;
-    }
-  }
-  
+  padding: 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-image-container {
+  flex: 1;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tech-stack {
+  text-align: center;
+}
+
+.tech-stack-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.tech-stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.tech-stack-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.tech-stack-item p {
+  font-size: 1rem;
+  text-align: center;
+}
