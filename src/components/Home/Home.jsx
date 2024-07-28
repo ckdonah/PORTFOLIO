@@ -1,7 +1,8 @@
-
 import React from 'react';
 import Project from '../Project/Project';
+import ProjectCard from '../Project/ProjectCard';
 import './Home.css'; 
+import gridx from '../../assets/projects/gridx.webp'; // Adjusted path
 
 function Home() {
   return (
@@ -13,6 +14,18 @@ function Home() {
         </h1>
       </div>
       <div className="projects-content" id="projects">
+        <h2>Projects</h2>
+
+        <ProjectCard
+          image={gridx}
+          altTitle="gridx"
+          imageUrl="https://gridxportfolio.netlify.app/"
+          title="gridx portfolio"
+          description="GridX is a responsive portfolio template with a clean design and smooth animations, built with HTML, CSS, and JavaScript."
+          demoUrl="https://gridxportfolio.netlify.app/"
+          codeUrl="https://github.com/ckdonah/"
+        />
+
         <Project
           title="A fresh take on an AI toolkit for employees"
           subtitle="UX | UI | User research"
