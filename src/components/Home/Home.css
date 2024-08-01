@@ -1,3 +1,4 @@
+/* Styling for the welcome section */
 .welcome-content {
   display: flex;
   flex-direction: column;
@@ -8,12 +9,99 @@
 }
 
 .welcome-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .welcome-greeting {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Container for the projects section */
+.projects-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Styling for the projects section header */
+.projects-content h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #111;
+  font-weight: bold;
+}
+
+/* Styling for individual project cards */
+.project.small {
+  width: calc(33.33% - 20px);
+  background-color: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.project p {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+  .project.small {
+    width: 100%; /* One card per row on iPad and smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project.small {
+    width: 100%; /* One card per row on phones */
+  }
 }
