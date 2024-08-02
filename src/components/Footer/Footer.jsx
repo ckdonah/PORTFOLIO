@@ -1,19 +1,29 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* <div className="footer-left">
-          <p className="footer-name">Godwin Daniel</p>
-          <p className="footer-title">Software Developer</p>
-        </div> */}
         <div className="footer-right">
-          <a href="resume-link" className="footer-link">Resume</a>
-          <a href="https://www.linkedin.com/in/godwinonah007" className="footer-link">LinkedIn</a>
-          <a href="dribbble-link" className="footer-link">Dribbble</a>
-          <a href="mailto:ckdonah@gmail.com" className="footer-link">Email</a>
+          <a
+            href="https://drive.google.com/file/d/1RFbPwd4EIxYhBA6Gbsrtm7_lYIeruUh3/view?usp=sharing"
+            className="footer-link"
+          >
+            Resume
+          </a>
+          <a
+            href="https://www.linkedin.com/in/godwinonah007"
+            className="footer-link"
+          >
+            LinkedIn
+          </a>
+          <a href="https://github.com/ckdonah" className="footer-link">
+            Github
+          </a>
+          <a href="mailto:ckdonah@gmail.com" className="footer-link">
+            Email
+          </a>
         </div>
       </div>
     </footer>
