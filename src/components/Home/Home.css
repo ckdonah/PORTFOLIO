@@ -25,7 +25,7 @@
 .projects-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;

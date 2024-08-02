@@ -23,7 +23,7 @@ function Home() {
           title="gridx portfolio"
           description="GridX is a responsive portfolio template with a clean design and smooth animations, built with HTML, CSS, and JavaScript."
           demoUrl="https://gridxportfolio.netlify.app/"
-          codeUrl="https://github.com/ckdonah/"
+          codeUrl="https://github.com/ckdonah/gridX"
         />
 
         <ProjectCard

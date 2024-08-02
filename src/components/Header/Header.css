@@ -3,7 +3,9 @@
   color: white;
   padding: 1rem;
   text-align: center;
-  position: relative; /* Add position relative to handle the absolute positioning of the menu */
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
 }
 
 .header-container {
@@ -36,7 +38,7 @@
 .header-link {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .header-link:hover {

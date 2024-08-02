@@ -8,16 +8,16 @@ function AboutPage() {
       <section className="about">
         <div className="about-container">
           <div className="about-content">
-            <h2 className="about-title">About me</h2>
+            {/* <h2 className="about-title">About me</h2> */}
             <h3 className="about-subtitle">
-              A lover of oat milk lattes, my dog, and good design, (not in that order).
+            I'm a web developer who loves big dogs, good design, and coding. I enjoy combining technical skills with creativity to build useful and beautiful web experiences. I’ve worked on projects that help people get things done, from sending mail to accessing healthcare..
             </h3>
             <p className="about-description">
-              What began as a desire to be both technical and creative has evolved into a career that I am completely passionate about. I’m proud to have designed digital products and services that improve peoples' lives, from getting work done to sending mail across the country to accessing healthcare in their local community.
+            I focus on creating websites that are functional, visually appealing, and easy to use. I’m committed to quality and making sure users have a great experience.
             </p>
           </div>
           <div className="about-image-container">
-            <img src="/images/images.jpeg" alt="Megan McCormick" className="about-image" />
+            <img src="/images/about_img_me.jpg" alt="OGD" className="about-image" />
           </div>
         </div>
       </section>
