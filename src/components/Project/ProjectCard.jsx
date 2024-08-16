@@ -12,7 +12,7 @@ const ProjectCard = ({
   demoUrl,
   codeUrl,
 }) => {
-  const btnStyle = "bg-black text-white py-1.5 px-3 rounded-md transition-colors duration-200 ease-in-out hover:bg-gray-800 flex items-center justify-center gap-1";
+  const btnStyle = "text-black bg-white py-1.5 px-3 rounded-md transition-colors duration-200 ease-in-out hover:bg-[#1e3a8a] hover:text-white flex items-center justify-center gap-1";
 
   return (
     <article className="project small">

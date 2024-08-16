@@ -45,12 +45,12 @@
 /* Styling for individual project cards */
 .project.small {
   width: calc(33.33% - 20px);
-  background-color: #e0f7fa;
+  /* background-color: #e0f7fa; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
@@ -58,7 +58,7 @@
 .project img {
   width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 
 .project h3 {
@@ -75,11 +75,11 @@
 }
 
 .project-button {
-  background-color: #333;
+  /* background-color: #333; */
   color: white;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
@@ -103,5 +103,71 @@
 @media (max-width: 480px) {
   .project.small {
     width: 100%; /* One card per row on phones */
+  }
+}
+
+
+
+
+
+/* Styling for the new welcome section */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.welcome-icon-container {
+  background-color: blue; /* Bright lime color */
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.welcome-icon {
+  width: 60%;
+  height: 70%;
+}
+
+.welcome-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-size: 56px;
+  margin-bottom: 1rem;
+  font-family: 'Caudex', serif; 
+}
+
+.welcome-text p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-size: 40px;
+  font-family: 'Caudex', serif; 
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-icon-container {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-text h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1.2rem;
   }
 }
