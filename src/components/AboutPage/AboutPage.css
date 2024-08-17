@@ -58,7 +58,7 @@
   width: 345px;
   height: 345px;
   border-radius: 50%; 
-  border: 10px solid blue; 
+  border: 10px solid black; 
   object-fit: cover; 
 }
 
@@ -133,7 +133,7 @@
 }
 
 .tab-button.active {
-  background-color: blue; /* Dark blue */
+  background-color: black; /* Dark blue */
   color: white;
 }
 
