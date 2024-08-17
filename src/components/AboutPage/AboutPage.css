@@ -39,12 +39,7 @@
   font-family: 'Caudex', serif; /* Apply Caudex to the description */
 }
 
-/* .about-image-container {
-  flex: 1;
-  max-width: 350px;
-  height: 250px;
-  border: 10px solid blue;
-} */
+
 
 .about-image-container {
   position: relative;
@@ -57,20 +52,14 @@
   justify-content: center;
 }
 
-/* .about-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block; 
-  margin: 0 auto;
-} */
+
 
 .about-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; /* Makes the image circular */
-  border: 10px solid blue; /* Bright lime color similar to your example */
-  object-fit: cover; /* Ensures the image covers the container fully */
+  width: 345px;
+  height: 345px;
+  border-radius: 50%; 
+  border: 10px solid blue; 
+  object-fit: cover; 
 }
 
 .tech-stack {
@@ -131,15 +120,16 @@
 }
 
 .tab-button {
-  padding: 10px 20px;
+  padding: 8px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 20px 10px;
   cursor: pointer;
-  background-color: #f3f4f6;
+  /* background-color: #f3f4f6; */
   color: black;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: 'Caudex', serif; /* Apply Caudex to the buttons */
+  background-color: #d1d5db
 }
 
 .tab-button.active {
@@ -200,3 +190,5 @@ li {
     max-width: 100%;
   }
 }
+
+

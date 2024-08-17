@@ -19,7 +19,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <NavLink to="/" className="header-logo" onClick={closeMenu}>OGD</NavLink>
+        <NavLink to="/" className="header-logo" onClick={closeMenu}>GD</NavLink>
         <button className="burger-menu" onClick={toggleMenu}>
           {isOpen ? '✕' : '☰'}
         </button>
