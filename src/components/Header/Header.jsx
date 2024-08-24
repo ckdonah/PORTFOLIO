@@ -19,12 +19,13 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <NavLink to="/" className="header-logo" onClick={closeMenu}>GD</NavLink>
+        <NavLink to="/" className="header-logo" onClick={closeMenu}>Godwin</NavLink>
         <button className="burger-menu" onClick={toggleMenu}>
           {isOpen ? '✕' : '☰'}
         </button>
         <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
-          <HashLink smooth to="/#projects" className="nav-link header-link" onClick={closeMenu}>Projects</HashLink>
+          <NavLink to="/" className={`header-link ${getActiveClass}`} onClick={closeMenu}>Home</NavLink>
+          <HashLink smooth to="/#work" className="nav-link header-link" onClick={closeMenu}>Work</HashLink>
           <NavLink to="/about" className={`header-link ${getActiveClass}`} onClick={closeMenu}>About</NavLink>
         </nav>
       </div>

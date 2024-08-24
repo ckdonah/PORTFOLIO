@@ -20,3 +20,22 @@ a {
   margin: 0 auto;
   padding: 1rem;
 }
+
+
+/* Add these custom styles to your main CSS file or within a style block */
+
+.icon-background {
+  background: linear-gradient(135deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%, #e0e0e0 100%);
+  background-size: 4px 4px;
+  clip-path: polygon(
+    50% 0%,
+    80% 10%,
+    100% 50%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0% 50%,
+    20% 10%
+  ); /* Creates a polygonal shape */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

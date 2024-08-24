@@ -14,6 +14,7 @@ function AboutPage() {
       <section className="about">
         <div className="about-container">
           <div className="about-content">
+            <h1 className="about-title">Nice to meet you!</h1>
             <h3 className="about-subtitle">
               I'm Godwin Daniel, a Software Developer with experience in
               combining technical expertise and creativity to design and develop
@@ -26,6 +27,7 @@ function AboutPage() {
               My friends describe me as kind, detail-oriented, innovative, and
               a good listener - skills I strive to bring into every aspect of my work. 
             </p>
+            
           </div>
           <div className="about-image-container">
             <img
@@ -34,7 +36,9 @@ function AboutPage() {
               className="about-image"
             />
           </div>
+          
         </div>
+        <hr className="content-divider" /> 
       </section>
 
       {/* "Some things that I'm..." Section */}
@@ -85,6 +89,7 @@ function AboutPage() {
           )}
         </div>
       </section>
+      <hr className="content-divider" /> {/* Add this line */}
       <Skillscontainer />
     </div>
   );
