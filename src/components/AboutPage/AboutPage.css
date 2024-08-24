@@ -3,118 +3,83 @@
 .about-page {
   padding: 2rem;
   font-family: 'Caudex', serif; /* Apply Caudex as the base font for the page */
+  background-color: #f8f9fa; /* Light background color */
 }
 
 .about-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center the content horizontally */
-  align-items: center;
-  padding: 20px;
+  align-items: center; /* Center the content vertically */
+  text-align: left; /* Align text to the left */
+  padding: 40px;
   margin: 0 auto; /* Center the container itself */
   max-width: 1200px; /* Set a max-width to control the width */
+  gap: 20px; /* Space between text and image */
 }
 
 .about-content {
   flex: 1;
-  margin-right: 2rem;
-  max-width: 500px;
+  max-width: 600px; /* Set a max-width for better readability */
 }
 
 .about-title {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Larger title font size */
+  font-weight: bold;
   margin-bottom: 1rem;
-  font-family: 'Caudex', serif; /* Apply Caudex to the title */
 }
 
 .about-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
-  font-family: 'Caudex', serif; /* Apply Caudex to the subtitle */
 }
 
 .about-description {
   font-size: 1rem;
   line-height: 1.5;
-  font-family: 'Caudex', serif; /* Apply Caudex to the description */
+  margin-bottom: 1rem;
 }
 
-
-
 .about-image-container {
-  position: relative;
   flex: 1;
-  max-width: 350px;
-  height: 350px; /* Make the height and width equal for a perfect circle */
+  max-width: 300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
 .about-image {
-  width: 345px;
-  height: 345px;
-  border-radius: 50%; 
-  border: 10px solid #030e52; 
-  object-fit: cover; 
-}
-
-.tech-stack {
-  text-align: center;
-}
-
-.tech-stack-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: 'Caudex', serif; /* Apply Caudex to the tech stack title */
-}
-
-.tech-stack-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.tech-stack-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100px;
-}
-
-.tech-stack-item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  border: 5px solid #030e52; /* Gold border similar to screenshot */
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.tech-stack-item p {
-  font-size: 1rem;
-  text-align: center;
-  font-family: 'Caudex', serif; /* Apply Caudex to the tech stack item text */
+.content-divider {
+  width: 100%; /* Full width of the parent container */
+  border: none;
+  border-top: 1px solid #d4d4d4; /* Light grey color for the line */
+  margin: 5rem 0; /* Space around the line */
 }
 
-/* Centering the "Some things that I'm..." Section */
 .skills-section {
   text-align: center;
   max-width: 800px;
-  margin: 40px auto; 
-  font-family: 'Caudex', serif; /* Apply Caudex to the skills section */
+  margin: 40px auto;
+  font-family: 'Caudex', serif;
 }
 
 .skills-section h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  font-family: 'Caudex', serif; /* Apply Caudex to the heading */
 }
 
 .tabs-container {
   display: flex;
-  justify-content: center; /* Center the tabs */
+  justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -122,23 +87,21 @@
 .tab-button {
   padding: 8px 20px;
   border: none;
-  border-radius: 20px ;
+  border-radius: 20px;
   cursor: pointer;
-  /* background-color: #f3f4f6; */
   color: black;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: 'Caudex', serif; /* Apply Caudex to the buttons */
-  background-color: #d1d5db
+  background-color: #d1d5db;
 }
 
 .tab-button.active {
-  background-color: #030e52; 
+  background-color: #030e52;
   color: white;
 }
 
 .tab-button:not(.active):hover {
-  background-color: #d1d5db; /* Slightly darker gray on hover */
+  background-color: #d1d5db;
 }
 
 .content-container {
@@ -146,16 +109,14 @@
   padding: 20px;
   border-radius: 10px;
   background-color: #f9fafb;
-  margin: 0 auto; /* Center the content container */
-  max-width: 600px; /* Set a max-width for better control */
-  text-align: left; /* Align text to the left */
-  font-family: 'Caudex', serif; /* Apply Caudex to the content */
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
 }
 
 ul {
   list-style: disc;
   padding-left: 20px;
-  font-family: 'Caudex', serif; /* Apply Caudex to the list */
 }
 
 li {
@@ -165,22 +126,16 @@ li {
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text on smaller screens */
   }
 
   .about-content, .about-image-container {
-    max-width: 100%; 
-    text-align: center; 
-    margin-right: 0; 
-    order: 0; 
+    max-width: 100%;
+    margin: 1.5rem 0;
   }
 
-  .about-image-container {
-    margin: 1.5rem 1rem; 
-  }
-
-  /* Adjust skills section for mobile */
   .skills-section {
     padding: 0 1rem;
   }
@@ -190,5 +145,3 @@ li {
     max-width: 100%;
   }
 }
-
-
