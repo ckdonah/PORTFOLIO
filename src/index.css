@@ -39,3 +39,11 @@ a {
   ); /* Creates a polygonal shape */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.content-divider {
+  width: 100%; /* Full width of the parent container */
+  border: none;
+  border-top: 1px solid #d4d4d4; /* Light grey color for the line */
+  margin: 5rem 0; /* Space around the line */
+}
+
