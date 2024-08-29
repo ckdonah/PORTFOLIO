@@ -10,7 +10,7 @@ function AboutPage() {
   };
 
   return (
-    <div className="about-page">
+    <div className="about-page" id="top">
       <section className="about">
         <div className="about-container">
           <div className="about-content">
@@ -27,7 +27,6 @@ function AboutPage() {
               My friends describe me as kind, detail-oriented, innovative, and
               a good listener - skills I strive to bring into every aspect of my work. 
             </p>
-            
           </div>
           <div className="about-image-container">
             <img
@@ -36,9 +35,8 @@ function AboutPage() {
               className="about-image"
             />
           </div>
-          
         </div>
-        <hr className="content-divider" /> 
+        <hr className="content-divider" />
       </section>
 
       {/* "Some things that I'm..." Section */}
@@ -89,7 +87,7 @@ function AboutPage() {
           )}
         </div>
       </section>
-      <hr className="content-divider" /> {/* Add this line */}
+      <hr className="content-divider" />
       <Skillscontainer />
     </div>
   );

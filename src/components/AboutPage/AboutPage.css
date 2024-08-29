@@ -58,12 +58,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.content-divider {
-  width: 100%; /* Full width of the parent container */
-  border: none;
-  border-top: 1px solid #d4d4d4; /* Light grey color for the line */
-  margin: 5rem 0; /* Space around the line */
-}
+
 
 .skills-section {
   text-align: center;

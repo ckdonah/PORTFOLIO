@@ -19,14 +19,23 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <NavLink to="/" className="header-logo" onClick={closeMenu}>Godwin</NavLink>
+        <HashLink smooth to="/#home" className="header-logo" onClick={closeMenu}>
+          Godwin.
+        </HashLink>
         <button className="burger-menu" onClick={toggleMenu}>
           {isOpen ? '✕' : '☰'}
         </button>
         <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
-          <NavLink to="/" className={`header-link ${getActiveClass}`} onClick={closeMenu}>Home</NavLink>
-          <HashLink smooth to="/#work" className="nav-link header-link" onClick={closeMenu}>Work</HashLink>
-          <NavLink to="/about" className={`header-link ${getActiveClass}`} onClick={closeMenu}>About</NavLink>
+          <HashLink smooth to="/#home" className={`header-link ${getActiveClass}`} onClick={closeMenu}>
+            Home
+          </HashLink>
+          <HashLink smooth to="/#projects" className="nav-link header-link" onClick={closeMenu}>
+            Work
+          </HashLink>
+          {/* Update About link to scroll to the top */}
+          <HashLink smooth to="/about#top" className={`header-link ${getActiveClass}`} onClick={closeMenu}>
+            About
+          </HashLink>
         </nav>
       </div>
     </header>
