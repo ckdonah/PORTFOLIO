@@ -1,8 +1,7 @@
 import React from "react";
-import Projects from "../Project/Powerhour";
+import Projects from "../Project/Projects";
 import "./Home.css";
 import handIcon from "../../assets/icons/hand-icon.png";
-
 function Home() {
   return (
     <div className="main">
@@ -35,8 +34,10 @@ function Home() {
         </svg>
       </div>
       <hr className="content-divider" />
+      
+      {/* Projects Section */}
       <section className="projects-content" id="projects">
-        <Projects />
+      <Projects />
       </section>
     </div>
   );
