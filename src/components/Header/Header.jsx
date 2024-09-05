@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import './Header.css';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,26 +12,53 @@ function Header() {
     setIsOpen(false);
   };
 
-  const getActiveClass = ({ isActive }) => (isActive ? 'active-link' : '');
+  const getActiveClass = ({ isActive }) => (isActive ? 'text-blue-500' : '');
 
   return (
-    <header className="header">
-      <div className="header-container">
-        <HashLink smooth to="/#home" className="header-logo" onClick={closeMenu}>
+    <header className="bg-white text-black p-6 sticky top-0 z-50 shadow-md">
+      <div className="flex justify-between items-center px-8">
+        <HashLink
+          smooth
+          to="/#home"
+          className="text-2xl font-bold"
+          onClick={closeMenu}
+        >
           Godwin.
         </HashLink>
-        <button className="burger-menu" onClick={toggleMenu}>
+        <button
+          className="text-3xl md:hidden"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
           {isOpen ? '✕' : '☰'}
         </button>
-        <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
-          <HashLink smooth to="/#home" className={`header-link ${getActiveClass}`} onClick={closeMenu}>
+        <nav
+          className={`${
+            isOpen ? 'flex' : 'hidden'
+          } md:flex flex-col md:flex-row items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent z-40 p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8`}
+        >
+          <HashLink
+            smooth
+            to="/#home"
+            className={`text-lg font-semibold ${getActiveClass}`}
+            onClick={closeMenu}
+          >
             Home
           </HashLink>
-          <HashLink smooth to="/#projects" className="nav-link header-link" onClick={closeMenu}>
+          <HashLink
+            smooth
+            to="/#projects"
+            className="text-lg font-semibold"
+            onClick={closeMenu}
+          >
             Work
           </HashLink>
-          {/* Update About link to scroll to the top */}
-          <HashLink smooth to="/about#top" className={`header-link ${getActiveClass}`} onClick={closeMenu}>
+          <HashLink
+            smooth
+            to="/about#top"
+            className={`text-lg font-semibold ${getActiveClass}`}
+            onClick={closeMenu}
+          >
             About
           </HashLink>
         </nav>
