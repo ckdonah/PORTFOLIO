@@ -1,16 +1,16 @@
 import React from "react";
-import Powerhour from "./Powerhour"; // Ensure correct path
-import GridX from "./Gridx"; // Ensure correct path
+import Powerhour from "./Powerhour"; 
+import GridX from "./Gridx"; 
 
 function Projects() {
   return (
     <section className="projects-content">
-      {/* Powerhour Project */}
-      <div className="mb-20"> {/* Adds bottom margin */}
+    
+      <div className="mb-20"> 
         <Powerhour />
       </div>
 
-      {/* GridX Project */}
+  
       <div>
         <GridX />
       </div>
