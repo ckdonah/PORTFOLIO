@@ -47,7 +47,7 @@ function Header() {
           </HashLink>
           <HashLink
             smooth
-            to="/#projects"
+            to="/#work" 
             className="text-lg font-semibold"
             onClick={closeMenu}
           >
