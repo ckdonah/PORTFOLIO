@@ -47,3 +47,6 @@ a {
   margin: 5rem 0; /* Space around the line */
 }
 
+.page-section {
+  scroll-margin-top: 6rem; /* Space between the top of the page and the section */
+}
