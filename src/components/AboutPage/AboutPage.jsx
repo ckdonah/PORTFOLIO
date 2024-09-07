@@ -10,7 +10,7 @@ function AboutPage() {
   };
 
   return (
-    <div className="about-page" id="top">
+    <div className="about-page page-section" id="top">
       <section className="about">
         <div className="about-container">
           <div className="about-content">

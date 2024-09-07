@@ -4,7 +4,7 @@ import powerhourImage2 from "../../assets/projects/powerhour2.webp";
 
 function Powerhour() {
   return (
-    <div className="projects-content bg-gray-50 py-12 px-8" id="work">
+    <div className="projects-content page-section bg-gray-50 py-12 px-8" id="work">
       <div className="case-study-container max-w-6xl mx-auto flex flex-col lg:flex-row items-start">
         {/* Text Section with Vertical Line */}
         <div className="text-section flex items-start mb-8">

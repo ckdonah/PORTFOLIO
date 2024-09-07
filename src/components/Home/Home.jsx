@@ -5,7 +5,7 @@ import handIcon from "../../assets/icons/hand-icon.png";
 function Home() {
   return (
     <div className="main">
-      <section className="welcome-section" id="home">
+      <section className="welcome-section page-section" id="home">
         <div className="welcome-icon-container">
           <img src={handIcon} alt="Hand Icon" className="welcome-icon" />
         </div>
