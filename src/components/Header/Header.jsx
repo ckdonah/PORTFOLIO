@@ -23,7 +23,7 @@ function Header() {
           className="text-2xl font-bold"
           onClick={closeMenu}
         >
-          Godwin.
+          GON
         </HashLink>
         <button
           className="text-3xl md:hidden"
