@@ -15,18 +15,18 @@ function Header() {
   const getActiveClass = ({ isActive }) => (isActive ? 'text-blue-500' : '');
 
   return (
-    <header className="bg-white text-black p-6 sticky top-0 z-50 shadow-md">
-      <div className="flex justify-between items-center px-8">
+    <header className="bg-white text-black p-5 sticky top-0 z-50">
+      <div className="flex justify-between items-center px-4">
         <HashLink
           smooth
           to="/#home"
-          className="text-2xl font-bold"
+          className="text-3xl font-bold"
           onClick={closeMenu}
         >
           GON
         </HashLink>
         <button
-          className="text-3xl md:hidden"
+          className="text-5xl md:hidden"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -35,20 +35,24 @@ function Header() {
         <nav
           className={`${
             isOpen ? 'flex' : 'hidden'
-          } md:flex flex-col md:flex-row items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent z-40 p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8`}
+          } md:flex flex-col md:flex-row items-center justify-center fixed md:static inset-0 md:inset-auto bg-white z-50 p-12 md:p-0 space-y-4 md:space-y-0 md:space-x-8 transition-all duration-300`}
         >
           <HashLink
             smooth
             to="/#home"
-            className={`text-lg font-semibold ${getActiveClass}`}
+            className={`${
+              isOpen ? 'text-2xl md:text-base' : 'text-lg'
+            } font-semibold ${getActiveClass}`}
             onClick={closeMenu}
           >
             Home
           </HashLink>
           <HashLink
             smooth
-            to="/#work" 
-            className="text-lg font-semibold"
+            to="/#work"
+            className={`${
+              isOpen ? 'text-2xl md:text-base' : 'text-lg'
+            } font-semibold`}
             onClick={closeMenu}
           >
             Work
@@ -56,7 +60,9 @@ function Header() {
           <HashLink
             smooth
             to="/about#top"
-            className={`text-lg font-semibold ${getActiveClass}`}
+            className={`${
+              isOpen ? 'text-2xl md:text-base' : 'text-lg'
+            } font-semibold ${getActiveClass}`}
             onClick={closeMenu}
           >
             About

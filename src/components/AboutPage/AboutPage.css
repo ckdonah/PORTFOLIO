@@ -3,7 +3,7 @@
 .about-page {
   padding: 2rem;
   font-family: 'Caudex', serif; /* Apply Caudex as the base font for the page */
-  background-color: #f8f9fa; /* Light background color */
+
 }
 
 .about-container {
@@ -70,6 +70,7 @@
 .skills-section h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
+  padding: 2rem;
 }
 
 .tabs-container {
@@ -103,7 +104,7 @@
   border: 1px solid #d1d5db;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f9fafb;
+
   margin: 0 auto;
   max-width: 600px;
   text-align: left;
