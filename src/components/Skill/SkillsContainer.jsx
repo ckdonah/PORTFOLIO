@@ -18,7 +18,7 @@ import vscode from "../../assets/icons/icon-vscode.png";
 
 const SkillsContainer = () => {
   return (
-    <section className="skills-container flex flex-col items-center justify-center bg-gray-50 text-black py-12">
+    <section className="skills-container flex flex-col items-center justify-center text-black py-12">
       <h2 className="mb-12 text-3xl font-bold text-gray-800">Tech Stack</h2>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-6 w-full max-w-5xl">
         {/* Responsive grid layout for varying screen sizes */}

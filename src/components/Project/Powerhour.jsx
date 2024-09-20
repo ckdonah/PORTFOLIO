@@ -13,7 +13,7 @@ function Powerhour() {
           {/* Text Content */}
           <div>
             <h1 className="text-5xl font-bold text-black mb-2">Powerhour Gym</h1>
-            <p className="text-xl text-gray-700 mb-4">CASE STUDY</p>
+            <p className="text-xl text-gray-700 mb-4">GYM WEBSITE</p>
             <p className="text-lg text-gray-800 max-w-2xl mb-6">
               Powerhour Gym is a modern, responsive gym website offering a sleek design and an intuitive user experience. Built with the MERN stack (MongoDB, Express.js, React, Node.js), it integrates seamlessly with gym management systems to provide a holistic fitness experience for users.
             </p>
