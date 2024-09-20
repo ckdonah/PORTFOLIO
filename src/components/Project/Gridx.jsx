@@ -13,7 +13,7 @@ function GridX() {
           {/* Text Content */}
           <div>
             <h1 className="text-5xl font-bold text-black mb-2">GridX Portfolio</h1>
-            <p className="text-xl text-gray-700 mb-4">CASE STUDY</p>
+            <p className="text-xl text-gray-700 mb-4">PORTFOLIO TEMPLATE</p>
             <p className="text-lg text-gray-800 max-w-2xl mb-6">
               GridX is a responsive portfolio template with a clean design and smooth animations, built with HTML, CSS, and JavaScript.
             </p>
